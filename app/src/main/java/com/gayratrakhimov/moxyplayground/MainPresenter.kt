@@ -18,6 +18,10 @@ class MainPresenter : MvpPresenter<MainView>() {
             .addInterceptor(HttpLoggingInterceptor().setLevel(HttpLoggingInterceptor.Level.BODY))
             .build()
 
+    override fun onFirstViewAttach() {
+        getIp()
+    }
+
     fun getApi() = Retrofit.Builder()
             .baseUrl("https://jsonip.com/")
             .client(getClient())
