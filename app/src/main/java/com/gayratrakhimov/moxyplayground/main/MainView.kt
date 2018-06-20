@@ -1,4 +1,4 @@
-package com.gayratrakhimov.moxyplayground
+package com.gayratrakhimov.moxyplayground.main
 
 import com.arellomobile.mvp.MvpView
 
